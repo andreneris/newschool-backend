@@ -5,5 +5,5 @@ export class Constants {
   static OAUTH_ENDPOINT = 'oauth';
   static USER_ENDPOINT = 'user';
   static COURSE_ENDPOINT = 'course';
-
+  static LESSON_ENDPOINT = 'lesson';
 }

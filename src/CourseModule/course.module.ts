@@ -1,3 +1,4 @@
+import { LessonController } from './controllers/lesson.controller';
 import { Module } from '@nestjs/common';
 import { CourseController } from './controllers';
 import { CourseService } from './service';
@@ -15,7 +16,7 @@ import { JwtModule } from '@nestjs/jwt';
       signOptions: { expiresIn: process.env.EXPIRES_IN_ACCESS_TOKEN },
     }),
   ],
-  controllers: [CourseController],
+  controllers: [CourseController,LessonController],
   providers: [CourseService, CourseMapper],
   exports: [CourseService],
 })
