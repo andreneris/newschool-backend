@@ -6,10 +6,10 @@ import { Course } from '.';
 @Entity()
 export class Lesson extends Audit{
     @PrimaryGeneratedColumn('uuid')
-    id: String;
+    id: string;
 
     @Column({nullable:false})
-    title: String;
+    title: string;
 
     @Column({nullable:false})
     description: string;
